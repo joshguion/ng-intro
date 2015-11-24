@@ -3,9 +3,10 @@
 
 <div class="addRecipeDiv">
   <form class="" action="index.html" method="post">
-    <input type="text" class="form-control" name="cover" ng-model="newRecipe.cover" placeholder="cover" value="">
-    <input type="text" class="form-control" name="title" ng-model="newRecipe.title" placeholder="title" value="">
-    <input type="textarea" class="form-control" ng-model="newRecipe.description" name="description" placeholder="description" value="">
-    <button type="button" ng-mouseover="cRecipe(newRecipe)" name="button">Add Recipe</button>
+    <input type="text" class="form-control" name="photo" ng-model="newRecipe.photo" placeholder="Recipe photo" value="">
+    <input type="text" class="form-control" name="title" ng-model="newRecipe.title" placeholder="Title" value="">
+    <input type="textarea" class="form-control" ng-model="newRecipe.ingrediants" name="ingrediants" placeholder="Ingrediants" value="">
+    <input type="text" class="form-control" name="instructions" ng-model="newRecipe.instructions" placeholder="Instructions" value="">
+    <button type="button" ng-click="cRecipe(newRecipe)" name="button">Add Recipe</button>
   </form>
 </div>
