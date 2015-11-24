@@ -11,6 +11,9 @@
       RecipesService.getRecipes().success(function (recipes) {
         console.log(recipes);
         $scope.myRecipes = recipes;
-      });
     });
+    $scope.addRecipe = function(newRecipe){
+      RecipesService.createRecipe(newRecipe);
+    };
 });
+})();

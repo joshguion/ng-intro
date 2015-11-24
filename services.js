@@ -11,7 +11,7 @@
         });
       };
 
-      var getRecipe = function () {
+      var getRecipes = function () {
         return $http.get(url);
       };
 

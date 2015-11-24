@@ -43,6 +43,22 @@ header {
   background-repeat: no-repeat;
   border-bottom: 2px solid #4A3F45; }
 
+.recipeDiv {
+  display: inline-block;
+  margin-left: 5%; }
+  .recipeDiv h3, .recipeDiv h4 {
+    color: white; }
+  .recipeDiv .titleSpan {
+    background: white;
+    color: #37333D;
+    padding: .5%;
+    border-radius: 4px; }
+  .recipeDiv p {
+    color: white; }
+  .recipeDiv img {
+    width: 30%;
+    margin-bottom: 2%; }
+
 .addRecipeDiv {
   background: white;
   padding: 2%;

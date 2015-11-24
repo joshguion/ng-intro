@@ -1,10 +1,9 @@
 
 <h1 class="recipesTitle">Your Recipes</h1>
 
-<div ng-repeat="recipe in myRecipes">
-  <h3>{{recipe.title}}</h3>
+<div class="recipeDiv" ng-repeat="recipe in myRecipes">
+  <h3><span class="titleSpan">{{recipe.title}}</span></h3>
+  <h4>Ingrediants: {{recipe.ingrediants}}</h4>
+  <p>Instructions: {{recipe.instructions}}</p>
   <img ng-src="{{recipe.photo}}" alt="" />
-  <p>
-    {{recipe.description}}
-  </p>
 </div>
