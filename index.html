@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-please</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Nunito' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="recipes">
+
+  <header>
+    <h3><span class="rr">R/R</span></h3>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#/addRecipe">[+]</a></li>
+        <li><a href="#/recipes">Recipes</a></li>
+        <li><a href="#/">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <ng-view></ng-view>
+
+  <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+  <script src="bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="controllers.js" charset="utf-8"></script>
+  <script src="services.js" charset="utf-8"></script>
+</body>
+</html>
